@@ -1,4 +1,4 @@
-import csv
+import csv, subprocess, os, webbrowser
 
 while True:
     columns = int(input("Input the number of columns in this data (up to 2): "))
@@ -85,3 +85,7 @@ with open('outputFile.csv', 'w') as csvfile:
     oFile.writerow(rows[7])
     oFile.writerow(rows[8])
     oFile.writerow(rows[9])
+
+os.system(' R file://C:\\Users\\apapaioannou\\downloads\\RScript.R')
+
+os.system('file://C:\\Users\\apapaioannou\\downloads\\Rplot.pdf')
