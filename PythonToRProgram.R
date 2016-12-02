@@ -1,7 +1,14 @@
 file.df <-
   read.csv("C:\\Users\\apapaioannou\\Downloads\\outputFile.csv",
            header = TRUE)
+labels <- read.table("C:\\Users\\apapaioannou\\Downloads\\graphLabels.txt")
 
-file.df <- file.df[rowSums(is.na(file.df)) != ncol(file.df), ]
+file.df <- 
+  file.df[rowSums(is.na(file.df)) != ncol(file.df), ]
 
-plot(file.df$Tst1, file.df$Test2)
+plot(main = "Python Graph",
+     xlab = labels[1, 1],
+     ylab = labels[2, 1],
+     file.df[, 1],
+     file.df[, 2],
+     type="l")
