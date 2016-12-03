@@ -8,7 +8,6 @@ file.df <-
 
 graphics.off()
 
-jpeg(file = "C:\\Users\\apapaioannou\\Downloads\\rplot.jpg")
 plot(x = file.df[, 1],
      y = file.df[, 2],
      main = "Python Graph",
@@ -16,4 +15,5 @@ plot(x = file.df[, 1],
      ylab = labels[2, 1],
      type = 'l'
 )
+jpeg(file = "C:\\Users\\apapaioannou\\Downloads\\rplot.jpg")
 dev.off
