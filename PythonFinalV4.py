@@ -94,7 +94,7 @@ with open('outputFile.csv', 'w') as csvfile:
 
 os.system('C:\\Users\\apapaioannou\\downloads\\RScriptV2.R')
 
-img = Image.open("C:\\Users\\apapaioannou\\documents\\rplot.jpg")
+img = Image.open("C:\\Users\\apapaioannou\\documents\\Rplot.jpg")
 img.show()
 print(img)
 
