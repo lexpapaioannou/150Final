@@ -92,11 +92,8 @@ with open('outputFile.csv', 'w') as csvfile:
     oFile.writerow(rows[8])
     oFile.writerow(rows[9])
 
-dummyPicture=open("C:\\Users\\apapaioannou\\docouments\\Rplot.jpg", "w")
-dummyPicture.close()
-
 os.system('cd "C:\Program Files\R\R-3.3.2\bin"')
-os.system('Rscript C:\\Users\\apapaioannou\\downloads\\RScriptV2.R')
+os.system(r'Rscript C:\Users\apapaioannou\downloads\RScriptV3.R')
 
 img = Image.open("C:\\Users\\apapaioannou\\documents\\Rplot.jpg")
 img.show()
