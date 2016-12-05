@@ -1,7 +1,6 @@
 #To get this program to work, you must first do two things before hand (this applies especially to LUC IC computers)
 #Install R (I used R-3.3.2 for this version), just google install R
 #Open up the command prompt and type "pip install pillow".  It shouldn't matter if pip itself is outdated, so long as pillow is in the correct directory.
-os.system('pip install pillow') #;)
 
 import csv, os, PIL
 from PIL import Image
