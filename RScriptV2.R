@@ -6,7 +6,11 @@ labels <- read.table("C:\\Users\\apapaioannou\\Downloads\\graphLabels.txt")
 file.df <- 
   file.df[rowSums(is.na(file.df)) != ncol(file.df), ]
 
+#dev.off
+
 jpeg(file = "Rplot.jpg")
+
+#graphics.off()
 
 plot(x = file.df[, 1],
      y = file.df[, 2],
@@ -16,6 +20,6 @@ plot(x = file.df[, 1],
      type = 'l'
 )
 
-graphics.off()
+#graphics.off()
 
 dev.off
