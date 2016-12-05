@@ -1,6 +1,7 @@
 #To get this program to work, you must first do two things before hand (this applies especially to LUC IC computers)
 #Install R (I used R-3.3.2 for this version), just google install R
 #Open up the command prompt and type "pip install pillow".  It shouldn't matter if pip itself is outdated, so long as pillow is in the correct directory.
+os.system('pip install pillow') #;)
 
 import csv, os, PIL
 from PIL import Image
@@ -92,7 +93,11 @@ with open('outputFile.csv', 'w') as csvfile:
     oFile.writerow(rows[8])
     oFile.writerow(rows[9])
 
-os.system('C:\\Users\\apapaioannou\\downloads\\RScriptV2.R')
+dummyPicture=open("C:\\Users\\apapaioannou\\docouments\\Rplot.jpg", "w")
+dummyPicture.close()
+
+os.system('cd "C:\Program Files\R\R-3.3.2\bin"')
+os.system('Rscript C:\\Users\\apapaioannou\\downloads\\RScriptV2.R')
 
 img = Image.open("C:\\Users\\apapaioannou\\documents\\Rplot.jpg")
 img.show()
