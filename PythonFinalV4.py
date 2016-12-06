@@ -95,7 +95,7 @@ with open('outputFile.csv', 'w') as csvfile:
 
 wait = input("PRESS ENTER TO CONTINUE.")
 
-os.system(r'"C:\Program Files\R\R-3.3.2\bin\Rscript" C:\Users\apapaioannou\downloads\RScriptV3.R')
+os.system(r"'C:\Program Files\R\R-3.3.2\bin\Rscript' C:\Users\apapaioannou\downloads\RScriptV3.R")
 
 img = Image.open("C:\\Users\\apapaioannou\\documents\\Rplot.jpg")
 img.show()
